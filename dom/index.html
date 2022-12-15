@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #444;
+    }
+    #n4 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #444;
+      display: none;
+    }
+    #n4.rect {
+      display: block;
+    }
+    #n4.red {
+      background-color: red;
+      color: white;
+      border-color: white;
+    }
+    .counter-container {
+      width: 300px;
+      height: 150px;
+      background: #eee;
+      border: 1px solid #f6f6f6;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+      position: relative;
+      font-size: 24px;
+    }
+    .counter-value {
+      grid-column: 1 / span 2;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .counter-button {
+      font-size: inherit;
+    }
+    .counter-done {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      font-size: 32px;
+      line-height: 150px;
+      color: #222;
+      text-shadow: 1px 1px #e6e6e6;
+      backdrop-filter: blur(3px);
+      display: none;
+    }
+  </style>
+  <title>DOM Checkpoint</title>
+</head>
+<body>
+
+  <!------------------------------------------------------------------------------------->
+  <hr />
+  <!-- 1. -->
+  <h1>1.</h1>
+
+  <section>
+    <h2>H2 the first</h2>
+  </section>
+
+  <article>
+    <h2>H2 the second</h2>
+  </article>
+
+  <!------------------------------------------------------------------------------------->
+  <hr />
+  <!-- 2. -->
+  <h1>2. </h1>
+
+  <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem reprehenderit repudiandae doloremque et omnis ducimus aspernatur beatae eius reiciendis!</p>
+
+  <!------------------------------------------------------------------------------------->
+  <hr />
+  <!-- 3. -->
+  <h1>3. </h1>
+
+  <ul class="todo-list">
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Eaque libero repellendus laudantium eos.</li>
+    <li>Consequuntur amet totam iusto reiciendis!</li>
+    <li>Enim deserunt quos blanditiis adipisci!</li>
+    <li>Ipsum quis dolore inventore laboriosam.</li>
+    <li>Asperiores aut incidunt similique laboriosam.</li>
+  </ul>
+
+  <!------------------------------------------------------------------------------------->
+  <hr />
+  <!-- 4. -->
+  <h1>4. </h1>
+
+  <div id="n4" class="rect red"></div>
+
+  <!------------------------------------------------------------------------------------->
+  <hr />
+  <!-- 5. -->
+  <h1>5. </h1>
+
+  <ul class="done-list">
+    <li>Lorem ipsum dolor sit.</li>
+    <li>Repudiandae delectus eaque reiciendis.</li>
+    <li>Debitis maiores illum culpa.</li>
+    <li>Nostrum deleniti minima rerum.</li>
+    <li>Repellendus ab quibusdam dolore?</li>
+    <li>Assumenda ratione ad iusto.</li>
+  </ul>
+
+  <!------------------------------------------------------------------------------------->
+  <hr />
+  <!-- 6. -->
+  <h1>6. </h1>
+
+  <div class="box"></div>
+  <button id="box-mover">Move Box</button>
+
+  <!------------------------------------------------------------------------------------->
+  <hr />
+  <!-- 7. -->
+  <h1>7. </h1>
+
+  <div class="counter-container">
+    <div class="counter-done">No Mas</div>
+    <span class="counter-value">0</span>
+    <button class="counter-button" data-value="5">+5</button>
+    <button class="counter-button" data-value="10">+10</button>
+  </div>
+
+  <script src="dom-checkpoint.js"></script>
+</body>
+</html>
