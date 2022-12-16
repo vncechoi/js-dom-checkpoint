@@ -6,8 +6,9 @@
 // 11
 // 9
 // ==============================================================================
-
-
+// for (let i = 17; i > 0 ; i-=2){
+//   console.log(i)
+// }
 // ==============================================================================
 // 2. Fizz-Buzz
 //    Implement code that does the following.
@@ -35,6 +36,23 @@
 //     16
 //     ...
 // ==============================================================================
+// for (let i = 1; i <= 100 ; i+=1){
+  
+//   if (i % 5 == 0 && i % 3 === 0) {
+//     console.log("Fizz Buzz")
+//   }
+//     else if (i % 3 === 0 ) {
+//     console.log("Fizz")
+//     }
+//     else if (i % 5 === 0) {
+//       console.log("Buzz")
+//     }
+  
+//   else {
+//     console.log(i)
+//   }
+
+// }
 
 
 // ==============================================================================
@@ -44,15 +62,18 @@
 // 3. What will the contents of the array below be after the code sample is
 // executed? 
 // let numbers = [2, 4, 6, 8]
-// numbers.pop()
+// numbers.pop() 
+// [2 ,4, 6]
 // numbers.push(10)
+// [2, 4, 6, 8, 10] 5
 // numbers.unshift(3)
-
+// [3, 2, 4, 6, 8] 5
 // 4. What is the console output of the code sample below?
 // let morse = ['dot', 'pause', 'dot']
 // let moreMorse = morse.join(' dash ')
+// ["dot pause dot dash"]
 // console.log(moreMorse.split(' '))
-
+// ['dot', 'pause, 'dot', 'dash']
 // 5. What will the contents of the `bands` array be after the code sample below
 // is executed?
 // let bands = []
@@ -63,7 +84,7 @@
 // bands[bands.length - 1].pop()
 // bands[0].shift()
 // bands[1][3] = "Ringo"
-
+// bands = ["John", "George", "Ringo", "Pete", Brian", "Mick", "Keith", "Charlie"]
 // ==============================================================================
 
 
